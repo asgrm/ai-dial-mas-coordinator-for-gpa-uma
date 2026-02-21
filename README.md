@@ -117,7 +117,7 @@ Prepare [docker-compose](docker-compose.yml) with all the services:
           - ./data:/app/data
     ```
 8. Run [docker-compose](docker-compose.yml) and test that it works:
-   - Make POST request to http://localhost:8052/openai/deployments/general-purpose-agent/chat/completions `{"messages": [{"role": "user","content": "hi?"}]}` 
+   - Make POST request to http://localhost:8052/openai/deployments/general-purpose-agent/chat/completions `{"messages": [{"role": "user","content": "hi?"}]}`
    - Create new conversation to UMS
 
 </details>
@@ -198,7 +198,7 @@ Prepare [docker-compose](docker-compose.yml) with all the services:
 6. Run application and test it:
    - `Do we have Andrej Karpathy as a user?`
    - Add Andrej Karpathy as use to our system
-   - Expected results after the testing: 
+   - Expected results after the testing:
      - Coordinator makes proper route to UMS Agent
      - Message history is preserved
      - Final result is generated based on the UMS Agent response
@@ -216,7 +216,7 @@ Prepare [docker-compose](docker-compose.yml) with all the services:
 2. Run application and test it:
    - Search the weather in Kyiv and after that generate a picture of it
    - Provide the [report.csv](tests/report.csv) and ask to generate chart bar from it
-   - Expected results: 
+   - Expected results:
      - Stages propagated from GPA to MAS Coordinator as well as attachments
 
 </details>
